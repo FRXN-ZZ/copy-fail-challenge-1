@@ -1,0 +1,33 @@
++ set -euo pipefail
++ KERNEL_TAG=v6.12
++++ dirname scripts/01_build_kernel.sh
+++ cd scripts
+++ pwd
++ SCRIPT_DIR=/workspaces/copy-fail-challenge-1/scripts
+++ cd /workspaces/copy-fail-challenge-1/scripts/..
+++ pwd
++ WORKSPACE_ROOT=/workspaces/copy-fail-challenge-1
++ BUSYBOX_SRC=/workspaces/copy-fail-challenge-1/kernel/busybox
++ INITRAMFS_DIR=/workspaces/copy-fail-challenge-1/kernel/initramfs
++ KERNEL_SRC=/workspaces/copy-fail-challenge-1/kernel/linux
++ BUILD_DIR=/workspaces/copy-fail-challenge-1/kernel/build
+++ nproc
++ JOBS=2
++ GREEN='\033[1;32m'
++ YELLOW='\033[1;33m'
++ CYAN='\033[1;36m'
++ NC='\033[0m'
++ echo -e '\033[1;36m[1/5] Clonando kernel v6.12 (solo último commit)...\033[0m'
+[1;36m[1/5] Clonando kernel v6.12 (solo último commit)...[0m
++ '[' '!' -d /workspaces/copy-fail-challenge-1/kernel/linux ']'
++ echo -e '\033[1;33m  → Fuentes ya presentes, omitiendo clone.\033[0m'
+[1;33m  → Fuentes ya presentes, omitiendo clone.[0m
++ cd /workspaces/copy-fail-challenge-1/kernel/linux
++ echo ''
+
++ echo -e '\033[1;36m[2/5] Guardando hash del commit vulnerable (evidencia)...\033[0m'
+[1;36m[2/5] Guardando hash del commit vulnerable (evidencia)...[0m
+++ git rev-parse HEAD
++ VULN_HASH=adc218676eef25575469234709c2d87185ca223a
++ echo adc218676eef25575469234709c2d87185ca223a
+scripts/01_build_kernel.sh: line 35: /workspaces/copy-fail-challenge/kernel/vuln_commit.txt: No such file or directory
