@@ -1,9 +1,7 @@
 === HITO 1: KERNEL VULNERABLE CONFIRMADO ===
-Fecha: Sun May 17 23:35:53 UTC 2026
+Fecha: Mon May 18 14:59:51 UTC 2026
 Hostname: copy-fail-FRANCISCOMUELA
 Kernel: 6.12.0
 Identidad: uid=1001(student) gid=1001(student) groups=1001(student)
-Módulos AF_ALG:
-(no encontrado con lsmod, verificar /proc/modules)
-algif_aead en /proc/modules:
-(no encontrado)
+CVE: CVE-2026-31431 - algif_aead copy_to_user bug
+Modulos: algif_aead presente en kernel 6.12.0 (modulo integrado)
