@@ -1,0 +1,12 @@
+=== HITO 3: MITIGACIÓN TEMPORAL ===
+Fecha: Mon May 18 10:40:15 UTC 2026
+Hostname: copy-fail-FRANCISCOMUELA
+algif_aead en lsmod:
+(módulo NO cargado - mitigación activa)
+
+Intento de exploit post-mitigación:
+Traceback (most recent call last):
+  File "copy_fail_exp.py", line 10, in <module>
+    a=s.socket(38,5,0);a.bind(("aead","authencesn(hmac(sha256),cbc(aes))"))
+OSError: [Errno 97] Address family not supported by protocol
+(exploit falló como se esperaba)
