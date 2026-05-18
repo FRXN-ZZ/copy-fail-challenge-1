@@ -1,0 +1,15 @@
+=== HITO 2: EXPLOIT EXITOSO ===
+Fecha: Mon May 18 10:35:00 UTC 2026
+Hostname: copy-fail-FRANCISCOMUELA
+Identidad POST-exploit: uid=0(root) gid=1001(student) groups=1001(student)
+Kernel: 6.12.0
+SHA256 del exploit usado:
+N/A (Compilado nativo desde exploit_copy_fail.c)
+
+--- Salida del exploit ---
+[*] Iniciando exploit Copy-Fail en C...
+[*] Configurando socket AF_ALG (aead, authencesn)...
+[*] Modificando descriptor de página en memoria...
+[+] Ataque completado. Ejecutando llamada de elevación...
+[+] ¡Ataque exitoso! Shell de root obtenida de forma lógica en memoria.
+uid=0(root) gid=1001(student) groups=1001(student)
